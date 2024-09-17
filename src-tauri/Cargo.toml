@@ -1,0 +1,31 @@
+[package]
+name = "rmbg-tauri"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["ame-yu"]
+edition = "2021"
+
+[lib]
+name = "rmbg_tauri_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-rc", features = [] }
+
+[dependencies]
+# Tauri dependencies
+tauri = { version = "=2.0.0-rc.13", features = [] }
+tauri-plugin-shell = "2.0.0-rc.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rustls = { version = "0.22.0-alpha.6" }
+tauri-plugin-dialog = "2.0.0-rc.7"
+# RMBG (Remove Background) related dependencies
+ort = { version = "2.0.0-rc.6", default-features = false, features = ["ndarray", "download-binaries"] }
+image = "=0.25.2"
+anyhow = "=1.0.89"
+ndarray = "0.16.1"
+fast_image_resize = "4.2.1"
+base64 = "0.22.1"
+tauri-plugin-fs = "2.0.0-rc"
+

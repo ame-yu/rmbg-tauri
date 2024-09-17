@@ -1,0 +1,26 @@
+{
+  "name": "rmbg-tauri",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "build:icon": "tauri icon ./src-tauri/gen/icon.png"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.7",
+    "@tauri-apps/api": ">=2.0.0-rc.0",
+    "@tauri-apps/plugin-dialog": "2.0.0-rc.1",
+    "@tauri-apps/plugin-shell": ">=2.0.0-rc.0",
+    "primevue": "^4.0.7",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": ">=2.0.0-rc.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}
